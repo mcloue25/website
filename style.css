@@ -2,6 +2,7 @@ body {
   margin:0;
   padding:0;
   background: #ebebeb;
+  font-family: verdana;
 }
 
 
@@ -41,6 +42,32 @@ body {
   position: relative;
   transition: flex 1.5s ease-in;
 }
+
+.panel h2{
+  font-size: 48px;
+  color: black;
+  
+  font-family: verdana;
+  /*position: absolute;*/
+  margin: 0;
+  opacity: 0;
+}
+
+
+.panel.active h2 {
+  padding-top: 60px; 
+  padding-left: 60px; 
+  opacity: 1;
+  transition: opacity 0.3s ease-in 1.2s;
+}
+
+
+.active_panel_textbox{
+  /*padding-top: 60px;
+  padding-left: 60px; */
+  color: black;
+}
+
 
 .panel h3 {
   font-size: 48px;
@@ -134,8 +161,8 @@ body {
   }
 
   100% {
-    width: 960px;
-    height: 480px;
+    width: 80vw;;
+    height: 80vh;;
     background: #fafafa;
     box-shadow:  40px 40px 40px #cccccc,
                  0 0 0 #ffffff,
