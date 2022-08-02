@@ -4,6 +4,8 @@ body {
   background: #ebebeb;
 }
 
+
+/*  ---------------------  PROJECTS CARD SLIDER  ------------------------------ */
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 *{
@@ -18,9 +20,12 @@ body {
     overflow: hidden;
     margin: 0;  
 } */
+
 .card_container {
   display: flex;
   width: 90vw;
+  justify-content: center;
+  align-items: center;
 }
 
 .panel {
@@ -38,7 +43,9 @@ body {
 }
 
 .panel h3 {
-  font-size: 24px;
+  font-size: 48px;
+  color: black;
+  font-family: verdana;
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -68,16 +75,16 @@ body {
 
 
 /*  ---------------------------------- index HTML OPENING BOX ANIMATION  ---------------------------------------- */
-*{
+/**{
   margin:0;
   padding:0;
-}
+}*/
 .container {
   background: #f0f0f0;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   width: 100vw;
   height: 100vh;
 }
