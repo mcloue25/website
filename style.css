@@ -6,6 +6,472 @@ body {
 }
 
 
+/* ---------------------------- ew */
+:root{
+  --base__color-1: @base__color-1;
+  --base__color-2: @base__color-2;
+}
+
+@base__color-1: #000;
+@base__color-2: #FFF;
+@base__color-3: #1D1E22;
+@base__color-4: #2D7EED;
+
+@bg-color: #080808;
+
+@layout__max-width: 1024px;
+@font-family__base: 'Source Sans Pro', sans-serif;
+@font-family__secondary: 'Raleway', serif;
+
+
+section.section-container{
+  background-color: @bg-color;
+  width: 100%;
+  height: 100%;
+  .flex();
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+};
+
+.cards-container{
+  width: 100%;
+  max-width: 290px;
+  position: relative;
+  .slide-button{
+    position: absolute;
+    .translate(0,-45%);
+    top: 45%;
+    right: -140px;
+    width: 38px;
+    height: 38px;
+    border-radius: 60px;
+    background: fade(@base__color-2, 30%);
+    .flex();
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .transition();
+    &::after{
+      content: '';
+      display: block;
+      margin-right: 30px;
+      .transition();
+      width: 40px;
+      height: 15px;
+      background-repeat: no-repeat;
+      background-image: @icon-arrow;
+    }
+    &:hover{
+      background: fade(@base__color-2, 20%);
+      .translate(4px, -45%);
+      &::after{
+        margin-right: 20px;
+      }
+    }
+  }
+  .cards-wrapper{
+    width: 100%;
+    position: relative;
+  }
+  .card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 30px 30px 55px;
+    background: @base__color-2;
+    border-radius: 20px;
+    .shadow(0px 8px 40px -30px fade(@base__color-1, 70%));
+    .flex();
+    flex-direction: column;
+    z-index: 50;
+    .transition();
+    //transition-delay: .05s;
+    opacity: 0;
+    .image-wrapper{
+      .transition();
+      will-change: transform;
+    }
+    .image{
+      width: calc(100% + 28%);
+      .translate(-20%, 0);
+      height: 200px;
+      .shadow(0px 20px 30px -15px fade(@base__color-1, 45%));
+      margin-bottom: 30px;
+      user-select: none;
+      overflow: hidden;
+      .transition();
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: contrast(1.1) hue-rotate(12deg) brightness(.9) saturate(.8);
+        border-radius: 10px;
+      }
+    }
+    h3{
+      width: 100%;
+      margin-bottom: 12px;
+      font-weight: 900;
+      font-size: 22px;
+      line-height: 24px;
+      letter-spacing: -0.5px;
+      color: @base__color-1;
+      font-family: @font-family__secondary;
+      user-select: none;
+      .transition();
+    }
+    p{
+      width: 100%;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.5px;
+      color: @base__color-1;
+      font-family: @font-family__base;
+      user-select: none;
+      .transition();
+    }
+    .button{
+      user-select: none;
+      position: absolute;
+      bottom: -25px;
+      left: 30px;
+      border-radius: 10px;
+      font-family: @font-family__secondary;
+      .gradient();
+      color: @base__color-2;
+      font-size: 18px;
+      padding: 0 16px;
+      line-height: 18px;
+      height: 50px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      text-align: center;
+      .flex();
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      .shadow(0px 15px 20px -15px fade(@base__color-4, 70%));
+      .transition();
+      &:hover{
+        left: 32px;
+        .shadow(0px 15px 20px -14px fade(@base__color-4, 85%));
+      }
+    }
+    .image, h3, p, .button{
+      opacity: 0;
+    }
+    &.active{
+      opacity: 1;
+      .image{   .animation(image, .5s, 1, normal, forwards, ease-in-out);  animation-delay: .15s;}
+      h3{       .animation(h3, .5s, 1, normal, forwards, ease-in-out);  animation-delay: .15s;}
+      p{        .animation(p, .5s, 1, normal, forwards, ease-in-out);  animation-delay: .15s;}
+      .button{  .animation(button, .5s, 1, normal, forwards, ease-in-out); animation-delay: .15s;}
+    }
+    &.inactive{
+      position: absolute;
+      top: 0;
+      left: 0;
+      &:hover{ cursor: pointer; }
+      &:nth-child(2){
+        .card();
+        &:hover{ .translate_rotate(20px,-20px,6deg); }
+      }
+      &:nth-child(3){
+        .card(.6, 40px, -40px, 48);
+        &:hover{ .translate_rotate(40px,-40px,6deg); }
+      }
+      &:nth-child(4){
+        .card(.4, 60px, -60px, 47);
+        &:hover{ .translate_rotate(60px,-60px,6deg); }
+      }
+      &:nth-child(5){
+        .card(.4, 80px, -80px, 46);
+        &:hover{ .translate_rotate(80px,-80px,6deg); }
+      }
+    }
+  }
+
+  .card(@opacity: .8, @x: 20px, @y: -20px, @index: 49){
+    opacity: @opacity;
+    z-index: @index;
+    .translate_rotate(@x,@y,0deg);
+    .transition();
+  }
+
+}
+
+// Koby's Infobox
+// -----------------------
+
+.infobox-container, .trademark{
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .trademark{
+    display: block;
+    position: absolute;
+    z-index: 99;
+    left: 50px;
+    top: 50px;
+    max-width: 70px;
+    svg{ width: 100%; }
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      transform: translate(0, -2px);
+    }
+  }
+  .trademark svg {
+    width: 100%;
+  }
+  .trademark:hover {
+    transform: translate(0, -2px);
+  }
+  
+  .infobox-container {
+    display: block;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    z-index: 99;
+  }
+  .infobox-container .social-media-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+  }
+  .infobox-container .social-media-links a {
+    margin: 0 15px;
+    transition: all 0.3s ease-in-out;
+    svg,
+    svg path {
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .infobox-container .social-media-links a:hover {
+    transform: translate(0, -2px);
+  }
+  .infobox-container .social-media-links a:hover svg path {
+    fill: #323232;
+  }
+}
+
+// Generals
+// -----------------------
+
+*{
+  box-sizing: border-box;
+}
+html{
+  width: 100%;
+  height: 100%;
+  background-color: @bg-color;
+  font-family: @font-family__base;
+}
+body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.main-content {
+  max-width: @layout__max-width;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+
+// Mixins
+// -----------------------
+
+.transition(@attribute: all, @duration: .25s) {
+  -webkit-transition: @attribute @duration ease;
+  -moz-transition: @attribute @duration ease;
+  -o-transition: @attribute @duration ease;
+  transition: @attribute @duration ease;
+}
+.transition-delay(@delay) {
+  -webkit-transition-delay: @delay;
+  -moz-transition-delay: @delay;
+  -ms-transition-delay: @delay;
+  -o-transition-delay: @delay;
+  transition-delay: @delay;
+}
+.translate(@transX,@transY) {
+  -webkit-transform: translate(@transX, @transY);
+  -moz-transform: translate(@transX, @transY);
+  -o-transform: translate(@transX, @transY);
+  -ms-transform: translate(@transX, @transY);
+  transform: translate(@transX, @transY);
+}
+.translate_xyz(@transX,@transY,@transZ) {
+  -webkit-transform: translate(@transX, @transY) translateZ(@transZ);
+  -moz-transform: translate(@transX, @transY) translateZ(@transZ);
+  -o-transform: translate(@transX, @transY) translateZ(@transZ);
+  -ms-transform: translate(@transX, @transY) translateZ(@transZ);
+  transform: translate(@transX, @transY) translateZ(@transZ);
+}
+.rotate(@deg) {
+  -moz-transform: rotate(@deg);
+  -ms-transform: rotate(@deg);
+  -o-transform: rotate(@deg);
+  -webkit-transform: rotate(@deg);
+  transform: rotate(@deg);
+}
+.scale(@scale) {
+  -moz-transform: scale(@scale);
+  -ms-transform: scale(@scale);
+  -o-transform: scale(@scale);
+  -webkit-transform: scale(@scale);
+  transform: scale(@scale);
+}
+.translate_rotate(@transX,@transY,@rotate) {
+  -webkit-transform: translate(@transX, @transY) rotate(@rotate);
+  -moz-transform: translate(@transX, @transY) rotate(@rotate);
+  -o-transform: translate(@transX, @transY) rotate(@rotate);
+  -ms-transform: translate(@transX, @transY) rotate(@rotate);
+  transform: translate(@transX, @transY) rotate(@rotate);
+}
+.shadow(@shadow-attributes){
+  -webkit-box-shadow: @shadow-attributes;
+  -moz-box-shadow: @shadow-attributes;
+  box-shadow: @shadow-attributes;
+}
+.flex(){
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.gradient() {
+  background: rgb(48,17,212);
+  background: linear-gradient(135deg, rgba(48,17,212,1) 0%, rgba(43,197,252,1) 100%);
+}
+
+//
+//  Animation Utilities
+//  ---------------------------------------------
+
+// @Example: .animation(slideIn , .25s , 1 , normal , forwards, ease-in-out);
+.animation(@name, @duration, @count, @direction, @fillmode, @timning) {
+  -moz-animation-name: @name;
+  -webkit-animation-name: @name;
+  animation-name: @name;
+
+  -moz-animation-duration: @duration;
+  -webkit-animation-duration: @duration;
+  animation-duration: @duration;
+
+  -moz-animation-iteration-count: @count;
+  -webkit-animation-iteration-count: @count;
+  animation-iteration-count: @count;
+
+  -moz-animation-direction: @direction;
+  -webkit-animation-direction: @direction;
+  animation-direction: @direction;
+
+  -moz-animation-fill-mode: @fillmode;
+  -webkit-animation-fill-mode: @fillmode;
+  animation-fill-mode: @fillmode;
+
+  -moz-animation-timing-function: @timning;
+  -webkit-animation-timing-function: @timning;
+  animation-timing-function: @timning;
+
+  .keyframe-animations("@{name}");
+}
+
+.keyframe-animations(@name){
+
+  @-webkit-keyframes @name {
+    .animation-properties(@name);
+  }
+  @-moz-keyframes @name {
+    .animation-properties(@name);
+  }
+  @-o-keyframes @name {
+    .animation-properties(@name);
+  }
+  @keyframes @name {
+    .animation-properties(@name);
+  }
+
+}
+
+// Icons
+// -----------------------
+
+@icon-arrow: url("data:image/svg+xml,%3Csvg width='40px' height='16px' viewBox='0 0 40 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3Cg id='Elements' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='01_Elements-SOCIAL_06_01' transform='translate(-723.000000, -530.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E %3Cg id='Element' transform='translate(323.000000, 293.000000)'%3E %3Cg id='Button' transform='translate(400.000000, 226.000000)'%3E %3Cg id='Group' transform='translate(20.000000, 19.000000) rotate(-90.000000) translate(-20.000000, -19.000000) translate(12.000000, -1.000000)'%3E %3Cpath d='M8,-0.005 C8.64720869,-0.005 9.1795339,0.486874664 9.24354639,1.11719476 L9.25,1.245 L9.25,35.728 L13.3661165,31.6111165 C13.8217282,31.1555048 14.5415486,31.1251307 15.0323881,31.5199942 L15.1338835,31.6111165 C15.5894952,32.0667282 15.6198693,32.7865486 15.2250058,33.2773881 L15.1338835,33.3788835 L8.88388348,39.6288835 C8.85415028,39.6586167 8.82292614,39.6868589 8.79033283,39.7134885 L8.88388348,39.6288835 C8.83611292,39.676654 8.78543782,39.7197498 8.73242665,39.7581708 L8.63335299,39.8230183 L8.63335299,39.8230183 L8.54709706,39.8692811 L8.54709706,39.8692811 L8.4332961,39.9178207 L8.4332961,39.9178207 L8.35305808,39.944444 L8.35305808,39.944444 L8.22623179,39.9745798 L8.22623179,39.9745798 L8.09592556,39.9913741 L8.09592556,39.9913741 L8,39.995 L8,39.995 L7.9207504,39.9925284 L7.9207504,39.9925284 L7.80882215,39.980391 L7.80882215,39.980391 L7.7207289,39.9636857 L7.7207289,39.9636857 L7.60490332,39.9312742 L7.60490332,39.9312742 L7.48583329,39.8846939 L7.48583329,39.8846939 L7.36640634,39.8227553 L7.36640634,39.8227553 L7.2675769,39.7580563 L7.2675769,39.7580563 L7.20966717,39.7134885 L7.1618193,39.6723498 L7.1618193,39.6723498 L0.866116524,33.3788835 C0.377961159,32.8907281 0.377961159,32.0992719 0.866116524,31.6111165 C1.3217282,31.1555048 2.04154862,31.1251307 2.53238813,31.5199942 L2.63388348,31.6111165 L6.75,35.728 L6.75,1.245 C6.75,0.554644063 7.30964406,-0.005 8,-0.005 Z' id='Path'%3E%3C/path%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+
+// Animation
+// -----------------------
+
+.animation-properties(@name){
+
+  & when (@name = "h3") {
+    from{
+      opacity: 0;
+      .translate(0,-20px);
+    }
+    85%{
+      opacity: 1;
+    }
+    to{
+      opacity: 1;
+      .translate(0,0);
+    }
+  }
+
+  & when (@name = "p") {
+    from{
+      opacity: 0;
+      .translate(0,-15px);
+    }
+    85%{
+      opacity: 1;
+    }
+    to{
+      opacity: 1;
+      .translate(0,0);
+    }
+  }
+
+  & when (@name = "button") {
+    from{
+      opacity: 0;
+      .translate(0,20px);
+    }
+    85%{
+      opacity: 1;
+    }
+    to{
+      opacity: 1;
+      .translate(0,0);
+    }
+  }
+
+  & when (@name = "image") {
+    from{
+      opacity: 0;
+      .translate(-40%,0);
+    }
+    85%{
+      opacity: 1;
+    }
+    to{
+      opacity: 1;
+      .translate(-20%,0);
+    }
+  }
+
+}
+
+
 /*  ---------------------  PROJECTS CARD SLIDER  ------------------------------ */
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
@@ -65,13 +531,13 @@ body {
 .active_panel_textbox{
   /*padding-top: 60px;
   padding-left: 60px; */
-  color: black;
+  color: #cecece;
 }
 
 
 .panel h3 {
   font-size: 48px;
-  color: black;
+  color: #cecece;
   font-family: verdana;
   position: absolute;
   bottom: 20px;
@@ -370,7 +836,7 @@ ul li a:hover:after {
 }
 
 .textbox{
-  /*display: flex;*/
+  display: block;
   justify-content: center;
   align-items: center;
   opacity: 0;
@@ -384,3 +850,6 @@ ul li a:hover:after {
 @keyframes cssAnimation {
   to   { opacity: 1; }
 }
+
+
+
