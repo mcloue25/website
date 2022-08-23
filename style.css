@@ -535,7 +535,7 @@ body{
 }
 
 
-.panel h3 {
+.panel h3 a {
   font-size: 48px;
   color: #cecece;
   font-family: verdana;
@@ -549,7 +549,7 @@ body{
 .panel.active {
   flex: 5;
 }
-.panel.active h3 {
+.panel.active h3 a{
   opacity: 1;
   transition: opacity 0.3s ease-in 1.2s;
 }
@@ -835,7 +835,7 @@ ul li a:hover:after {
   transform: translateX(-100%);
 }
 
-.textbox{
+.home_animated_textbox{
   display: block;
   justify-content: center;
   align-items: center;
@@ -843,7 +843,7 @@ ul li a:hover:after {
   font-size: 20px;
   font-family: verdana;
   padding-top: 30px;
-  /*padding-left: 30px;*/
+  padding-left: 30px;
   animation: cssAnimation 2s linear 3.5s forwards;
 }
 
