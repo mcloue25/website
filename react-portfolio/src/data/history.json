@@ -1,0 +1,29 @@
+[
+  {
+    "role": "Computer Vision Engineer",
+    "organisation": "MoveAhead",
+    "startDate": "Jun, 2020",
+    "endDate": "Present",
+    "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
+    "imageSrc": "history/MoveAheadCircle.png"
+  },
+  {
+    "role": "ICT Executive Officer",
+    "organisation": "Revenue Comission",
+    "startDate": "Apr, 2019",
+    "endDate": "Oct, 2019",
+    "experiences": ["Provided POC SQL queries accessed through a Hadoop Cluster", "Created interactive dashboards to display results of "],
+    "imageSrc": "history/revenueComission.png"
+  },
+  {
+    "role": "SWE Intern",
+    "organisation": "Ircona",
+    "startDate": "Mar, 2016",
+    "endDate": "Jul, 2016",
+    "experiences": [
+      "Worked on component library",
+      "Verify contents of component database"
+    ],
+    "imageSrc": "history/ircona.png"
+  }
+]
