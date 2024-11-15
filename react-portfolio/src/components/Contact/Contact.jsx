@@ -8,23 +8,23 @@ export const Contact = () => {
     <footer id="contact" className={styles.container}>
       <div className={styles.text}>
         <h2>Contact</h2>
-        <p>Feel free to reach out if you want to talk data or anything else!</p>
+        <p>Feel free to reach out if you want to talk data!</p>
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
           <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="mailto:myemail@email.com">eoin.mcloughlin1997@gmail.com</a>
+          <a href="mailto:myemail@email.com">My email</a>
         </li>
         <li className={styles.link}>
           <img
             src={getImageUrl("contact/linkedinIcon.png")}
             alt="LinkedIn icon"
           />
-          <a href="www.linkedin.com/in/eoin-mcloughlin-3398a11a6">linkedin</a>
+          <a href="www.linkedin.com/in/eoin-mcloughlin-3398a11a6">Linkedin Profile</a>
         </li>
         <li className={styles.link}>
           <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-          <a href="https://github.com/mcloue25">github.com/mcloue25</a>
+          <a href="https://github.com/mcloue25">Github Profile</a>
         </li>
       </ul>
     </footer>

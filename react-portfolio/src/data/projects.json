@@ -1,26 +1,26 @@
 [
   {
-    "title": "Project A",
+    "title": "Basketball Player Tracking",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "description": "Tracks player movement to generate shooting percentages & efficiency.",
+    "skills": ["Python", "Computer Vision", "Machine Learning"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/mcloue25/basketball-analytics"
   },
   {
-    "title": "Project B",
+    "title": "Clothes Recommender",
     "imageSrc": "projects/project.png",
     "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
+    "skills": ["webscraping",  "Computer Vision", "Machine Learning"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/mcloue25/tvc_clothes_recommender"
   },
   {
-    "title": "Project C",
+    "title": "Stock Analysis & prediction",
     "imageSrc": "projects/project.png",
     "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "skills": ["Python", "Webscraping", "React"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/mcloue25/stock_analysis"
   }
 ]

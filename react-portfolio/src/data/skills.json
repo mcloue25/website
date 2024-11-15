@@ -12,6 +12,10 @@
     "imageSrc": "skills/tensorflow.png"
   },
   {
+    "title": "Git",
+    "imageSrc": "skills/git.png"
+  },
+  {
     "title": "HTML",
     "imageSrc": "skills/html.png"
   },
