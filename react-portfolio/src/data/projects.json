@@ -1,15 +1,15 @@
 [
   {
     "title": "Basketball Player Tracking",
-    "imageSrc": "projects/project.png",
-    "description": "Tracks player movement to generate shooting percentages & efficiency.",
+    "imageSrc": "projects/basketball.gif",
+    "description": "Model to track player movement to generate shooting percentages & efficiency metrics.",
     "skills": ["Python", "Computer Vision", "Machine Learning"],
     "demo": "https://www.example.com",
     "source": "https://github.com/mcloue25/basketball-analytics"
   },
   {
-    "title": "Clothes Recommender",
-    "imageSrc": "projects/project.png",
+    "title": "Clothes Style Recommender system",
+    "imageSrc": "projects/clothesDataset.png",
     "description": "This is a project made to learn the latest languages by building an app.",
     "skills": ["webscraping",  "Computer Vision", "Machine Learning"],
     "demo": "https://www.example.com",
@@ -17,9 +17,9 @@
   },
   {
     "title": "Stock Analysis & prediction",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["Python", "Webscraping", "React"],
+    "imageSrc": "projects/cryptoTrader.png",
+    "description": "A project which analyzes a stock's historical performance to predict its future price trends.",
+    "skills": ["Python", "Webscraping", "React", "Node"],
     "demo": "https://www.example.com",
     "source": "https://github.com/mcloue25/stock_analysis"
   }

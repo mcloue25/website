@@ -3,7 +3,8 @@
 .container {
   color: var(--color-text);
   margin-top: 120px;
-  background-color: var(--color-secondary);
+  /* background-color: var(--color-bg); */
+  background-color: #a5d7e86b;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

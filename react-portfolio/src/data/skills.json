@@ -16,6 +16,10 @@
     "imageSrc": "skills/git.png"
   },
   {
+    "title": "Java",
+    "imageSrc": "skills/java.png"
+  },
+  {
     "title": "HTML",
     "imageSrc": "skills/html.png"
   },
@@ -42,13 +46,5 @@
   {
     "title": "Figma",
     "imageSrc": "skills/figma.png"
-  },
-  {
-    "title": "Node",
-    "imageSrc": "skills/node.png"
-  },
-  {
-    "title": "GraphQL",
-    "imageSrc": "skills/graphql.png"
   }
 ]

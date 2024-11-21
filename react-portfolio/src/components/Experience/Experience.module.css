@@ -37,7 +37,8 @@
 }
 
 .skillImageContainer {
-  background-color: var(--color-secondary);
+  /* background-color: var(--color-secondary); */
+  background-color: #a5d7e86b;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -68,8 +69,9 @@
   flex-direction: row;
   align-items: center;
   gap: 17px;
-  background: #19376d;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  /* background: var(--color-silver); */
+  /* box-shadow: 0 16px 14px 0 #7f828b; */
+  /* background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%); */
   border-radius: 10px;
   padding: 24px;
 }
