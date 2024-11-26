@@ -4,15 +4,29 @@
     "organisation": "MoveAhead",
     "startDate": "Jun, 2020",
     "endDate": "Present",
-    "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
+    "experiences": [
+        "Built biomechanical signal processing library", 
+        "Developed time series models using video data with over 95% accuracy compared to MoCap systems",
+        "Created internal analytics and visualization tools for local use and AWS deployment",
+        "Led client meetings to address needs and guide features from concept to launch",
+        "Designed backend database architecture using AWS S3 and MongoDB"
+      ],
     "imageSrc": "history/MoveAheadCircle.png"
   },
+
+ 
+ 
+
+
   {
     "role": "ICT Executive Officer",
     "organisation": "Revenue Comission",
     "startDate": "Apr, 2019",
     "endDate": "Oct, 2019",
-    "experiences": ["Provided POC SQL queries accessed through a Hadoop Cluster", "Created interactive dashboards to display results"],
+    "experiences": [
+      "Provided POC SQL queries accessed through a Hadoop Cluster", 
+      "Created interactive dashboards to display results"
+    ],
     "imageSrc": "history/revenueComission.png"
   },
   {
