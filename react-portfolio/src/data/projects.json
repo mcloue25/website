@@ -2,7 +2,7 @@
   {
     "title": "Basketball Player Tracking",
     "imageSrc": "projects/basketball.gif",
-    "description": "Model to track player movement to generate shooting percentages & efficiency metrics.",
+    "description": "A CV model trained to track player movement to generate shooting percentages & efficiency metrics.",
     "skills": ["Python", "Computer Vision", "Machine Learning"],
     "demo": "https://www.example.com",
     "source": "https://github.com/mcloue25/basketball-analytics"
@@ -10,7 +10,7 @@
   {
     "title": "Clothes Style Recommender system",
     "imageSrc": "projects/clothesDataset.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "description": "A CV model trained to recognise & highlight clothes from websites that matches a user’s specific style.",
     "skills": ["webscraping",  "Computer Vision", "Machine Learning"],
     "demo": "https://www.example.com",
     "source": "https://github.com/mcloue25/tvc_clothes_recommender"

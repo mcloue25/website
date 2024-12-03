@@ -20,7 +20,7 @@ export const Contact = () => {
             src={getImageUrl("contact/linkedinIcon.png")}
             alt="LinkedIn icon"
           />
-          <a href="www.linkedin.com/in/eoin-mcloughlin-3398a11a6">Linkedin Profile</a>
+          <a href="https://www.linkedin.com/in/eoin-mcloughlin-3398a11a6/">Linkedin Profile</a>
         </li>
         <li className={styles.link}>
           <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
