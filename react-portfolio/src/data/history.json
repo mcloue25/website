@@ -6,6 +6,7 @@
     "endDate": "Present",
     "experiences": [
         "Built biomechanical signal processing library", 
+        "Developed test bed for comparing out of the box Pose Estimation models",
         "Developed time series models using video data with over 95% accuracy compared to MoCap systems",
         "Created internal analytics and visualization tools for local use and AWS deployment",
         "Led client meetings to address needs and guide features from concept to launch",
@@ -13,10 +14,6 @@
       ],
     "imageSrc": "history/MoveAheadCircle.png"
   },
-
- 
- 
-
 
   {
     "role": "ICT Executive Officer",

@@ -4,15 +4,15 @@
     "imageSrc": "projects/basketball.gif",
     "description": "A CV model trained to track player movement to generate shooting percentages & efficiency metrics.",
     "skills": ["Python", "Computer Vision", "Machine Learning"],
-    "demo": "https://www.example.com",
+    "demo": "https://www.BballPlayerTrackingDemo.com",
     "source": "https://github.com/mcloue25/basketball-analytics"
   },
   {
     "title": "Clothes Style Recommender system",
     "imageSrc": "projects/clothesDataset.png",
-    "description": "A CV model trained to recognise & highlight clothes from websites that matches a user’s specific style.",
+    "description": "A CV model trained to recognise & classify clothes from websites that matches a user’s specific style.",
     "skills": ["webscraping",  "Computer Vision", "Machine Learning"],
-    "demo": "https://www.example.com",
+    "demo": "https://www.ClothesRecommenderSystemDemo.com",
     "source": "https://github.com/mcloue25/tvc_clothes_recommender"
   },
   {
@@ -20,7 +20,23 @@
     "imageSrc": "projects/cryptoTrader.png",
     "description": "A project which analyzes a stock's historical performance to predict its future price trends.",
     "skills": ["Python", "Webscraping", "React", "Node"],
-    "demo": "https://www.example.com",
+    "demo": "https://www.StockAnalysisDemo.com",
     "source": "https://github.com/mcloue25/stock_analysis"
+  },
+  {
+    "title": "PocketTrainer",
+    "imageSrc": "projects/weightsGIF.gif",
+    "description": "Final Year project to assess human movement performance built alongside accompanying performance tracker app.",
+    "skills": ["Computer Vision", "Android Studio", "Docker"],
+    "demo": "https://www.PocketTrainerDemo.com",
+    "source": "https://github.com/mcloue25/PocketTrainer"
+  },
+  {
+    "title": "TikTok Generator",
+    "imageSrc": "projects/reel-generator.gif",
+    "description": "Scrapes popular subreddits & creates short form video content that can be uploaded to social media platforms.",
+    "skills": ["Python", "Webscraping", "Selenium"],
+    "demo": "https://www.ReelGeneratorDemo.com",
+    "source": "https://github.com/mcloue25/reels_generator"
   }
 ]

@@ -48,7 +48,8 @@
   width: 100%;
   margin-top: 26px;
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
+  /* justify-content: space-around; */
 }
 
 .link {
