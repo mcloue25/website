@@ -9,8 +9,8 @@ export const About = () => {
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
         <img
-          src={getImageUrl("about/aboutImage.png")}
-          alt="Me sitting with a laptop"
+          src={getImageUrl("about/working.jpg")}
+          alt="Me working on phase synchrony for MoveAhead"
           className={styles.aboutImage}
         />
         <ul className={styles.aboutItems}>
@@ -28,7 +28,7 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Machine Learning Engineer</h3>
               <p>
-                I have experience building both Time Series & Computer Vision models
+                I have built nemerous Time Series & Computer Vision models for work & varying projects
               </p>
             </div>
           </li>
@@ -37,7 +37,7 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Frontend Developer</h3>
               <p>
-                I have designed & built multiple dashboards for displaying the results of these models when testing data in the wild!
+                I have designed & developed multiple dashboards for displaying the results of these models when testing data in the wild!
               </p>
             </div>
           </li>

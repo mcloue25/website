@@ -8,14 +8,6 @@
     "imageSrc": "skills/SQL.png"
   },
   {
-    "title": "TensorFlow",
-    "imageSrc": "skills/tensorflow.png"
-  },
-  {
-    "title": "Git",
-    "imageSrc": "skills/git.png"
-  },
-  {
     "title": "Java",
     "imageSrc": "skills/java.png"
   },
@@ -30,6 +22,18 @@
   {
     "title": "JavaScript",
     "imageSrc": "skills/js.png"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "skills/git.png"
+  },
+  {
+    "title": "TensorFlow",
+    "imageSrc": "skills/tensorflow.png"
+  },
+  {
+    "title": "CUDA",
+    "imageSrc": "skills/cuda.png"
   },
   {
     "title": "React",

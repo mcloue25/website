@@ -34,7 +34,7 @@
   {
     "title": "TikTok Generator",
     "imageSrc": "projects/reel-generator.gif",
-    "description": "Scrapes popular subreddits & creates short form video content that can be uploaded to social media platforms.",
+    "description": "Scrapes popular subreddits & creates short form video content thats automatically uploaded to social media platforms.",
     "skills": ["Python", "Webscraping", "Selenium"],
     "demo": "https://www.ReelGeneratorDemo.com",
     "source": "https://github.com/mcloue25/reels_generator"
