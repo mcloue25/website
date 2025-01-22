@@ -28,7 +28,7 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Machine Learning Engineer</h3>
               <p>
-                I have built nemerous Time Series & Computer Vision models for work & varying projects
+                I have built numerous Time Series & Computer Vision models as part of my work & various projects
               </p>
             </div>
           </li>
@@ -37,7 +37,7 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Frontend Developer</h3>
               <p>
-                I have designed & developed multiple dashboards for displaying the results of these models when testing data in the wild!
+                I have designed & developed multiple dashboards for displaying the results of these models when applied to data in the wild
               </p>
             </div>
           </li>
