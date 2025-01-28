@@ -5,14 +5,19 @@
     "startDate": "Jun, 2020",
     "endDate": "Present",
     "experiences": [
-        "Built biomechanical signal processing library", 
-        "Developed test bed for comparing out of the box Pose Estimation models",
-        "Developed time series models using video data with over 95% accuracy compared to MoCap systems",
-        "Created internal analytics and visualization tools for local use and AWS deployment",
-        "Led client meetings to address needs and guide features from concept to launch",
-        "Designed backend database architecture using AWS S3 and MongoDB"
+        "Designed and implemented testing framework for evaluating open source pose estimation models based on accuracy, efficiency & compatibility with on edge devices", 
+        "Developed scalable and efficient data extraction and cleaning pipelines using Pythons SciPy and Pandas libraries to optimise processing workflow",
+        "Conducted exploratory data analysis to design and implement a proprietary biomechanical signal processing Python library adopted as a standard tool across the organization",
+        "Designed & built movement assessment pipelines that achieve over 95% accuracy when compared to gold standard human evaluation techniques & current Motion capture systems leveraging Pandas & Numpy ",
+        "Created multiple object detection models tailored to hardware constraints ensuring optimal performance across different devices and systems",
+        "Led client meetings to gather requirements, discuss needs and collaborate on feature development to ensure alignment with business objectives",
+        "Built & maintained frontend applications using Android Studio, React & C#",
+        "Developed internal analytics & visualisation tools deployed on AWS using Matplotlib & Seaborn to provide actionable insights",
+        "Contributed to the design of a scalable backend database architecture combining Amazon S3 and MongoDB for optimised data storage and retrieval",
+        "Contributed to the development of LSTM model for accurate movement identification and classification",
+        "Helped raise the valuation of this 8 person company to +€10 million"
       ],
-    "imageSrc": "history/MoveAheadCircle.png"
+    "imageSrc": "history/MoveAhead.png"
   },
 
   {
@@ -21,8 +26,8 @@
     "startDate": "Apr, 2019",
     "endDate": "Oct, 2019",
     "experiences": [
-      "Provided POC SQL queries accessed through a Hadoop Cluster", 
-      "Created interactive dashboards to display results"
+      "Delivered proof of concept that the existing proprietary backend system could be refactored into a set of optimized SQL queries accessed via a Hadoop cluster ", 
+      "Created interactive dashboard using R’s ShinyDashboard library to effectively visualise and present query results for improved decision making"
     ],
     "imageSrc": "history/revenueComission.png"
   },

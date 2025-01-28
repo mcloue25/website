@@ -12,6 +12,10 @@
     "imageSrc": "skills/java.png"
   },
   {
+    "title": "C#",
+    "imageSrc": "skills/CSharp.png"
+  },
+  {
     "title": "HTML",
     "imageSrc": "skills/html.png"
   },
