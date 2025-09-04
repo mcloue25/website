@@ -1,20 +1,18 @@
-import styles from "./App.module.css";
-import { About } from "./components/About/About";
-import { Contact } from "./components/Contact/Contact";
-import { Experience } from "./components/Experience/Experience";
-import { Hero } from "./components/Hero/Hero";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Projects } from "./components/Projects/Projects";
+import { About } from "./components/About";
+import { Contact } from "./components/Contact";
+import { Experience } from "./components/Experience";
+import { Hero } from "./components/Hero";
+import { Navbar } from "./components/Navbar";
+import { Projects } from "./components/Projects";
 
 function App() {
   return (
-    <div className={styles.App}>
+    <div className="min-h-screen bg-brand-bg text-brand-text font-sans">
       <Navbar />
       <Hero />
       <About />
       <Experience />
       <Projects />
-      {/* <CoursesAndCertificates/> */}
       <Contact />
     </div>
   );
