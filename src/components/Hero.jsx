@@ -32,7 +32,7 @@ export const Hero = () => {
       <img
         src={getImageUrl("hero/linkedinProfilePicCircular.png")}
         alt="Hero image of me"
-        className="w-1/2 max-w-md md:max-w-lg md:w-[46%] rounded-2xl shadow-soft"
+        className="w-1/2 max-w-md md:max-w-lg md:w-[46%] rounded-2xl"
       />
     </section>
   );

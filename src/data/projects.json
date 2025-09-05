@@ -1,35 +1,12 @@
 [
   {
-    "title": "Basketball Player Tracking",
-    "imageSrc": "projects/bball_analytics_updated.png",
-    "description": "A CV model trained to track player movement to generate shooting percentages & efficiency metrics.",
-    "skills": ["Python", "Computer Vision", "Machine Learning"],
-    "demo": "https://www.BballPlayerTrackingDemo.com",
-    "source": "https://github.com/mcloue25/basketball-analytics"
-  },
-  {
-    "title": "Clothes Style Recommender system",
-    "imageSrc": "projects/clothesDataset.png",
-    "description": "A CV model trained to recognise & classify clothes from websites that matches a user’s specific style.",
-    "skills": ["webscraping",  "Computer Vision", "Machine Learning"],
-    "demo": "https://www.ClothesRecommenderSystemDemo.com",
-    "source": "https://github.com/mcloue25/tvc_clothes_recommender"
-  },
-  {
-    "title": "Stock Analysis & prediction",
-    "imageSrc": "projects/cryptoTrader.png",
-    "description": "A project which analyzes a stock's historical performance to predict its future price trends.",
-    "skills": ["Python", "Webscraping", "React", "Node"],
-    "demo": "https://www.StockAnalysisDemo.com",
-    "source": "https://github.com/mcloue25/stock_analysis"
-  },
-  {
-    "title": "PocketTrainer",
-    "imageSrc": "projects/weightsGIF.gif",
-    "description": "Final Year project to assess human movement performance built alongside accompanying performance tracker app.",
-    "skills": ["Computer Vision", "Android Studio", "Docker"],
-    "demo": "https://www.PocketTrainerDemo.com",
-    "source": "https://github.com/mcloue25/PocketTrainer"
+    "title": "ClubHub",
+    "imageSrc": "projects/court-scheduler.png",
+    "description": "All-in-one team management app that handles facility scheduling, live in-game stat tracking, league standings & player analytics.",
+    "skills": ["Javascript", "React", "Tailwind", "Expo", "Firebase", "axios"],
+    "demo": "https://www.ReelGeneratorDemo.com",
+    "imageFit": "contain",
+    "source": "https://github.com/mcloue25/court-scheduler"
   },
   {
     "title": "TikTok Generator",
@@ -37,6 +14,52 @@
     "description": "Scrapes popular subreddits & creates short form video content thats automatically uploaded to social media platforms.",
     "skills": ["Python", "Webscraping", "Selenium"],
     "demo": "https://www.ReelGeneratorDemo.com",
+    "imageFit": "contain",
     "source": "https://github.com/mcloue25/reels_generator"
+  },
+  {
+    "title": "Basketball Player Tracking",
+    "imageSrc": "projects/bball_analytics_updated.png",
+    "description": "A CV model trained to track player movement to generate shooting percentages & efficiency metrics.",
+    "skills": ["Python", "Computer Vision", "Pose Estimation", "Time Sereies Analysis", "Machine Learning"],
+    "demo": "https://www.BballPlayerTrackingDemo.com",
+    "imageFit": "contain",
+    "source": "https://github.com/mcloue25/basketball-analytics"
+  },
+  {
+    "title": "Clothes Style Recommender system",
+    "imageSrc": "projects/clothesDataset.png",
+    "description": "A CV model trained to recognise & classify clothes from websites that matches a user’s specific style.",
+    "skills": ["Wbscraping",  "Computer Vision", "Machine Learning"],
+    "demo": "https://www.ClothesRecommenderSystemDemo.com",
+    "imageFit": "contain",
+    "source": "https://github.com/mcloue25/tvc_clothes_recommender"
+  },
+  {
+    "title": "Stock Analysis & Prediction",
+    "imageSrc": "projects/cryptoTrader.png",
+    "description": "A project which analyzes a stock's historical performance to predict its future price trends.",
+    "skills": ["Python", "Regression", "Webscraping", "React", "Node"],
+    "demo": "https://www.StockAnalysisDemo.com",
+    "imageFit": "contain",
+    "source": "https://github.com/mcloue25/stock_analysis"
+  },
+  {
+    "title": "PocketTrainer",
+    "imageSrc": "projects/weightsGIF.gif",
+    "description": "Final Year project to assess human movement performance built alongside accompanying performance tracker app.",
+    "skills": ["Computer Vision", "Pose Estimation", "Signal Processing", "Android Studio", "Docker"],
+    "demo": "https://www.PocketTrainerDemo.com",
+    "imageFit": "contain",
+    "source": "https://github.com/mcloue25/PocketTrainer"
+  },
+  {
+    "title": "Website",
+    "imageSrc": "projects/website.png",
+    "description": "See how I built this website.",
+    "skills": ["Javascript", "React", "Tailwind", "Vite", "Netlify"],
+    "demo": "https://www.PocketTrainerDemo.com",
+    "imageFit": "contain",
+    "source": "https://github.com/mcloue25/website"
   }
 ]
