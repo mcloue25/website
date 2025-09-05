@@ -1,10 +1,44 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Outfit", Arial, Helvetica, sans-serif;
+@import "tailwindcss";
+
+/* Define your design tokens here (Tailwind v4) */
+@theme {
+  --color-brand-bg: #0B132B;
+  --color-brand-surface: #0F172A;
+  --color-brand-text: #E5E7EB;
+  --color-brand-primary: #4F46E5;
+  --color-brand-accent: #7DD3FC;
+  --color-brand-ring: #93C5FD;
+
+  --shadow-soft: 0 10px 30px -10px rgba(0,0,0,.45);
+
+  /* so `font-sans` uses Inter stack */
+  --font-sans: Inter, ui-sans-serif, system-ui, "Segoe UI", Roboto,
+               Helvetica, Arial, "Noto Sans", "Apple Color Emoji",
+               "Segoe UI Emoji", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
+/* Global base */
+:root { color-scheme: dark; }
+html, body, #root { height: 100%; }
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-brand-bg text-brand-text font-sans antialiased; }
+  /* sticky header anchor offset */
+  [id] { scroll-margin-top: 80px; }
+}
+
+/* Reusable utility “recipes” */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 text-base font-semibold
+           bg-brand-primary text-white shadow-soft transition hover:opacity-95
+           focus:outline-none focus:ring-4 focus:ring-brand-ring;
+  }
+  .card {
+    @apply rounded-2xl border border-white/10 bg-brand-surface/80 backdrop-blur p-6 shadow-soft;
+  }
+  .chip {
+    @apply rounded-full bg-slate-900 px-4 py-1 text-sm text-slate-200;
+  }
 }

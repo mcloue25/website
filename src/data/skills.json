@@ -32,8 +32,8 @@
     "imageSrc": "skills/git.png"
   },
   {
-    "title": "TensorFlow",
-    "imageSrc": "skills/tensorflow.png"
+    "title": "PyTorch",
+    "imageSrc": "skills/PyTorch.png"
   },
   {
     "title": "CUDA",
