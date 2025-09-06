@@ -38,7 +38,7 @@
   {
     "title": "Stock Analysis & Prediction",
     "imageSrc": "projects/cryptoTrader.png",
-    "description": "A project which analyzes a stock's historical performance to predict its future price trends.",
+    "description": "A project a friend and I built which analyzes a stock's historical performance to predict its future price trends.",
     "skills": ["Python", "Regression", "Webscraping", "React", "Node"],
     "demo": "https://www.StockAnalysisDemo.com",
     "imageFit": "contain",

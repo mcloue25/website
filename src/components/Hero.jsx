@@ -10,11 +10,12 @@ export const Hero = () => {
         </h1>
         <p className="mt-3 text-lg text-slate-300">
           Machine Learning Engineer & Data Scientist specializing in{" "}
-          <span className="text-brand-accent">Time Series</span> and{" "}
-          <span className="text-brand-accent">Computer Vision</span>.
+          <span className="text-brand-accent">Computer Vision</span>, {" "}
+          <span className="text-brand-accent">Time Series</span> and {" "}
+          <span className="text-brand-accent">Pose Estimation</span>.
         </p>
         <p className="mt-2 text-base text-slate-400">
-          4+ years delivering production models and dashboards that turn data into decisions.
+          5+ years delivering production models and analytics tools that turn data into decisions.
         </p>
         <div className="mt-6 flex items-center gap-3">
           <a href="mailto:eoin.mcloughlin1997@gmail.com" className="btn-primary">
