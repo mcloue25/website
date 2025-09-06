@@ -2,7 +2,7 @@
   "undergrad": {
     "degree": "B.Sc. in Computer Applications & Software Engineering",
     "link": "https://www.dcu.ie/computing/bsc-computer-science",
-    "institution": "Dublin City University | DCU",
+    "institution": "DCU | Dublin City University",
     "start": "2016",
     "end": "2020",
     "result": "First Class Honours (1.1)",
@@ -11,7 +11,7 @@
   "masters": {
     "degree": "M.Sc. in Advanced Artificial Intelligence",
     "link": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSE&MAJR=T413&KEYWORD=advancedai",
-    "institution": "University College Dublin | UCD",
+    "institution": "UCD | University College Dublin",
     "start": "2025",
     "end": "Present",
     "notes": "Currently attending; focus on advanced ML & model optimisation."
