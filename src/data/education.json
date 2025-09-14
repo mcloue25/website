@@ -6,6 +6,7 @@
     "start": "2016",
     "end": "2020",
     "result": "First Class Honours (1.1)",
+    "gpa" : "4.5",
     "notes": "Final-year project: computer vision & pose estimation (details below)."
   },
   "masters": {

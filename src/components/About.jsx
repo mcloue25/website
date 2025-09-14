@@ -4,22 +4,22 @@ import { getImageUrl } from "../utils";
 export const About = () => {
   const items = [
     {
-      icon: "about/cursorIcon.png",
-      title: "Data Scientist",
-      text:
-        "I'm a Data Scientist who designs Time Series Analysis models to translate complex data into actionable results",
-    },
-    {
       icon: "about/serverIcon.png",
       title: "Machine Learning Engineer",
       text:
-        "I have built numerous Time Series & Computer Vision models as part of my work & various projects",
+        "I train advanced Time Series and Computer Vision models to solve complex real-world problems.",
+    },
+    {
+      icon: "about/cursorIcon.png",
+      title: "Software Developer",
+      text:
+        "I build reliable software systems that host these models and integrate them into practical applications.",
     },
     {
       icon: "about/uiIcon.png",
       title: "Frontend Developer",
       text:
-        "I have designed & developed multiple dashboards for displaying the results of these models when applied to data in the wild",
+        "I design and develop dashboards that let users interact with the models and explore their results intuitively.",
     },
   ];
 

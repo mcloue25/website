@@ -4,16 +4,36 @@
     "imageSrc": "skills/python.png"
   },
   {
+    "title": "PyTorch",
+    "imageSrc": "skills/PyTorch.png"
+  },
+  {
+    "title": "TensorFlow",
+    "imageSrc": "skills/tensorflow.png"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "skills/git.png"
+  },
+  {
     "title": "SQL",
     "imageSrc": "skills/SQL.png"
   },
   {
-    "title": "Java",
-    "imageSrc": "skills/java.png"
+    "title": "AWS",
+    "imageSrc": "skills/AWS.png"
   },
   {
-    "title": "C#",
-    "imageSrc": "skills/CSharp.png"
+    "title": "MongoDB",
+    "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "JavaScript",
+    "imageSrc": "skills/js.png"
+  },
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png"
   },
   {
     "title": "HTML",
@@ -24,32 +44,16 @@
     "imageSrc": "skills/css.png"
   },
   {
-    "title": "JavaScript",
-    "imageSrc": "skills/js.png"
-  },
-  {
-    "title": "Git",
-    "imageSrc": "skills/git.png"
-  },
-  {
-    "title": "PyTorch",
-    "imageSrc": "skills/PyTorch.png"
-  },
-  {
     "title": "CUDA",
     "imageSrc": "skills/cuda.png"
   },
   {
-    "title": "React",
-    "imageSrc": "skills/react.png"
+    "title": "Java",
+    "imageSrc": "skills/java.png"
   },
   {
-    "title": "AWS",
-    "imageSrc": "skills/AWS.png"
-  },
-  {
-    "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
+    "title": "C#",
+    "imageSrc": "skills/CSharp.png"
   },
   {
     "title": "Figma",

@@ -2,22 +2,32 @@
   {
     "role": "Computer Vision Engineer",
     "organisation": "MoveAhead",
-    "startDate": "Jun, 2020",
-    "endDate": "Present",
+    "startDate": "Jun, 2022",
+    "endDate": "Sept, 2025",
     "experiences": [
-        "Designed and implemented testing framework for evaluating open source pose estimation models based on accuracy, efficiency & compatibility with on edge devices", 
-        "Developed scalable and efficient data extraction and cleaning pipelines using Pythons SciPy and Pandas libraries to optimise processing workflow",
-        "Conducted exploratory data analysis to design and implement a proprietary biomechanical signal processing Python library adopted as a standard tool across the organization",
-        "Designed & built movement assessment pipelines that achieve over 95% accuracy when compared to gold standard human evaluation techniques & current Motion capture systems leveraging Pandas & Numpy ",
-        "Created multiple object detection models tailored to hardware constraints ensuring optimal performance across different devices and systems",
+        "Conceptualised and developed movement assessment pipelines that achieve over 95% accuracy when compared to gold standard human evaluation techniques & current Motion capture systems leveraging Numpy & Pandas",
+        "Created production grade object detection models tailored to hardware constraints ensuring optimal performance across different devices and systems",
         "Led client meetings to gather requirements, discuss needs and collaborate on feature development to ensure alignment with business objectives",
         "Built & maintained frontend applications using Android Studio, React & C#",
         "Developed internal analytics & visualisation tools deployed on AWS using Matplotlib & Seaborn to provide actionable insights",
         "Contributed to the design of a scalable backend database architecture combining Amazon S3 and MongoDB for optimised data storage and retrieval",
-        "Contributed to the development of LSTM model for accurate movement identification and classification",
+        "Facilitated the development of LSTM models for accurate movement identification and classification",
         "Helped raise the valuation of this 8 person company to +€10 million"
       ],
     "imageSrc": "history/MoveAhead.png"
+  },
+
+  {
+    "role": "Research Assistant",
+    "organisation": "Dublin City University",
+    "startDate": "Jun, 2020",
+    "endDate": "Jul, 2022",
+    "experiences": [
+        "Designed and implemented testing framework for evaluating open source pose estimation models based on accuracy, efficiency & compatibility with on edge devices.", 
+        "Conducted exploratory data analysis to design and implement a proprietary biomechanical signal processing Python library adopted as a standard tool across the organization.",
+        "Developed scalable and efficient data extraction and cleaning pipelines using Pythons SciPy & Pandas libraries to optimise processing workflows."
+      ],
+    "imageSrc": "history/DCU.png"
   },
 
   {

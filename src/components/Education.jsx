@@ -47,17 +47,26 @@ export const Education = () => {
                 {ug?.start || "YYYY"} – {ug?.end || "YYYY"}
               </p>
             </div>
-            {ug?.result && (
-              <span className="self-start rounded-full bg-white/10 px-3 py-1 text-sm font-medium text-slate-100">
-                {ug.result}
-              </span>
-            )}
+
+            <div className="flex flex-col items-end gap-2">
+              {ug?.result && (
+                <span className="rounded-full border border-white/20 bg-white/10 px-2 py-0.5 text-sm font-medium text-slate-100">
+                  {ug.result}
+                </span>
+              )}
+              {ug?.gpa && (
+                <span className="rounded-full border border-white/20 bg-white/10 px-2 py-0.5 text-sm font-medium text-slate-100">
+                  GPA: {ug.gpa}
+                </span>
+              )}
+            </div>
           </div>
 
           {ug?.notes && (
             <p className="mt-3 text-base text-slate-300">{ug.notes}</p>
           )}
         </div>
+
 
         {/* Masters (in progress) */}
         <div className="card">
