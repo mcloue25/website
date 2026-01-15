@@ -2,7 +2,7 @@
   {
     "title": "QML Fincance Trading",
     "imageSrc": "projects/QML-dashboard.png",
-    "description": "Analysis of classical vs quantum machine learning model architecturres when applied to financial data",
+    "description": "Comparative analysis of classical and quantum machine learning model architectures applied to financial data",
     "skills": ["Python", "yFinance", "pandas", "numpy", "pennylane", "Sklearn", "Next.js"],
     "demo": "https://www.ReelGeneratorDemo.com",
     "imageFit": "contain",
@@ -11,7 +11,7 @@
   {
     "title": "Tennis Swing Classificant",
     "imageSrc": "projects/forehand-annotated.gif",
-    "description": "Classifying tennis swings using a video dataset with 96% accuracy",
+    "description": "Tennis swing classification achieving 96% accuracy using video data",
     "skills": ["Python", "Pytorch", "CNN", "LSTM", "Pose Estimation", "pandas"],
     "demo": "https://www.ReelGeneratorDemo.com",
     "imageFit": "contain",
