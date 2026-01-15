@@ -33,10 +33,10 @@ export const ProjectCard = ({
 
       <div className="mt-4 flex-1">
         <h3 className="text-xl font-semibold text-center line-clamp-2">{title}</h3>
-        <p className="mt-2 text-sm text-slate-300 line-clamp-3">{description}</p>
+        <p className="mt-2 text-sm text-slate-300 line-clamp-3 text-center">{description}</p>
         {impact && <p className="mt-2 text-xs text-slate-400 line-clamp-2">Outcome: {impact}</p>}
 
-        <ul className="mt-3 flex max-h-16 flex-wrap gap-2 overflow-hidden">
+        <ul className="mt-3 flex max-h-16 flex-wrap gap-2 overflow-hidden ">
           {skills.map((skill, id) => (
             <li key={id} className="chip">{skill}</li>
           ))}
