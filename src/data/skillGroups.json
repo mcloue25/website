@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Research & Experimentation",
+    "description": "Research-led evaluation, benchmarking and interpretability work for applied ML systems.",
+    "skills": ["Reproducibility", "Benchmarking", "Ablation Studies", "Perturbation Testing", "Statistical Evaluation", "Model Interpretability", "Technical Writing"
+    ]
+  },
+  {
+    "title": "Machine Learning",
+    "description": "Model development and evaluation across supervised learning, deep learning and sequence modelling.",
+    "skills": ["Python", "PyTorch", "TensorFlow", "scikit-learn", "XGBoost", "LightGBM", "CNNs", "LSTMs", "Model Evaluation"]
+  },
+  {
+    "title": "Computer Vision & Time Series",
+    "description": "Applied modelling for movement, video, sensor and sequential data.",
+    "skills": ["Pose Estimation", "Object Detection", "Action Recognition", "Video Analysis", "Time Series Classification", "Signal Processing", "Saliency Analysis"]
+  },
+  {
+    "title": "ML Engineering",
+    "description": "Engineering practices for moving models from experiments into reliable systems.",
+    "skills": ["AWS", "Docker", "REST APIs", "Data Pipelines", "SQL", "MongoDB", "Git", "Testing", "Cloud Deployment"]
+  },
+  {
+    "title": "Analytics & Product Delivery",
+    "description": "User-facing tools that make model outputs useful, interpretable and actionable.",
+    "skills": ["React", "JavaScript", "Tailwind", "Dashboards", "Data Visualisation", "R Shiny", "Analytics Workflows", "Technical Communication"]
+  }
+]

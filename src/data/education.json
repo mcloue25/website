@@ -2,21 +2,23 @@
   "undergrad": {
     "degree": "B.Sc. in Computer Applications & Software Engineering",
     "link": "https://www.dcu.ie/computing/bsc-computer-science",
-    "institution": "DCU | Dublin City University",
+    "institution": "Dublin City University",
     "start": "2016",
     "end": "2020",
     "result": "First Class Honours (1.1)",
-    "gpa" : "3.75",
-    "notes": "Final-year project: computer vision & pose estimation (details below)."
+    "gpa": "3.75",
+    "notes": "Final-year project focused on computer vision, pose estimation and movement-quality assessment.",
+    "modules": ["Software Engineering", "Data Analytics", "Computer Vision", "Databases", "Cloud & Distributed Systems"]
   },
   "masters": {
     "degree": "M.Sc. in Advanced Artificial Intelligence",
     "link": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSE&MAJR=T413&KEYWORD=advancedai",
-    "institution": "UCD | University College Dublin",
+    "institution": "University College Dublin",
     "start": "2025",
     "end": "2026",
-    "result": "First Class Honours (1.1) | Current",
-    "gpa" : "3.63",
-    "notes": "Focused on advanced machine learning, model optimisation, time series analysis and applied AI systems."
+    "result": "First Class Honours (1.1)",
+    "gpa": "3.89",
+    "notes": "Focused on advanced machine learning, model optimisation, time series analysis, computer vision and applied AI systems.",
+    "modules": ["Advanced Machine Learning", "Optimisation", "Time Series", "Computer Vision", "Applied AI"]
   }
 }

@@ -2,53 +2,51 @@
   {
     "role": "Computer Vision Engineer",
     "organisation": "MoveAhead",
-    "startDate": "Jun, 2022",
-    "endDate": "Sept, 2025",
+    "startDate": "Jun 2022",
+    "endDate": "Sep 2025",
     "experiences": [
-        "Conceptualised and developed movement assessment pipelines that achieve over 95% accuracy when compared to gold standard human evaluation techniques & current Motion capture systems leveraging Numpy & Pandas",
-        "Created production grade object detection models tailored to hardware constraints ensuring optimal performance across different devices and systems",
-        "Led client meetings to gather requirements, discuss needs and collaborate on feature development to ensure alignment with business objectives",
-        "Built & maintained frontend applications using Android Studio, React & C#",
-        "Developed internal analytics & visualisation tools deployed on AWS using Matplotlib & Seaborn to provide actionable insights",
-        "Contributed to the design of a scalable backend database architecture combining Amazon S3 and MongoDB for optimised data storage and retrieval",
-        "Facilitated the development of LSTM models for accurate movement identification and classification",
-        "Helped raise the valuation of this 8 person company to +€10 million"
-      ],
+      "Conceptualised and developed movement assessment pipelines that achieved over 95% agreement with gold-standard human evaluation and motion-capture techniques using NumPy and pandas.",
+      "Developed production-grade object detection models optimised for device-level hardware constraints and real-time inference requirements.",
+      "Built and maintained user-facing applications in Android Studio, React and C# to support model interaction, data capture and analytics workflows.",
+      "Developed internal analytics and visualisation tools deployed on AWS to provide actionable performance and movement insights.",
+      "Contributed to scalable backend data architecture using Amazon S3 and MongoDB for efficient storage, retrieval and analysis of movement data.",
+      "Developed LSTM-based movement classification models for temporal sequence analysis.",
+      "Led client-facing requirements discussions and translated business needs into model, product and analytics features.",
+      "Contributed to core computer vision and analytics capabilities during a period in which the company reached a €10M+ valuation."
+    ],
     "imageSrc": "history/MoveAhead.png"
   },
-
   {
     "role": "Research Assistant",
     "organisation": "Dublin City University",
-    "startDate": "Jun, 2020",
-    "endDate": "Jul, 2022",
+    "startDate": "Jun 2020",
+    "endDate": "Jul 2022",
     "experiences": [
-        "Designed and implemented testing framework for evaluating open source pose estimation models based on accuracy, efficiency & compatibility with on edge devices.", 
-        "Conducted exploratory data analysis to design and implement a proprietary biomechanical signal processing Python library adopted as a standard tool across the organization.",
-        "Developed scalable and efficient data extraction and cleaning pipelines using Pythons SciPy & Pandas libraries to optimise processing workflows."
-      ],
+      "Designed and implemented a testing framework for evaluating open-source pose estimation models across accuracy, efficiency and edge-device compatibility.",
+      "Conducted exploratory data analysis and contributed to a proprietary biomechanical signal processing Python library adopted as a standard internal research tool.",
+      "Developed scalable data extraction and cleaning pipelines using Python, SciPy and pandas to improve research processing workflows."
+    ],
     "imageSrc": "history/DCU.png"
   },
-
   {
     "role": "ICT Executive Officer",
-    "organisation": "Revenue Comission",
-    "startDate": "Apr, 2019",
-    "endDate": "Oct, 2019",
+    "organisation": "Revenue Commissioners",
+    "startDate": "Apr 2019",
+    "endDate": "Oct 2019",
     "experiences": [
-      "Delivered proof of concept that the existing proprietary backend system could be refactored into a set of optimized SQL queries accessed via a Hadoop cluster ", 
-      "Created interactive dashboard using R’s ShinyDashboard library to effectively visualise and present query results for improved decision making"
+      "Delivered a proof of concept showing how an existing proprietary backend process could be refactored into optimised SQL queries accessed through a Hadoop cluster.",
+      "Created an interactive dashboard using R ShinyDashboard to visualise query results and support decision-making."
     ],
     "imageSrc": "history/revenueComission.png"
   },
   {
-    "role": "SWE Intern",
+    "role": "Software Engineering Intern",
     "organisation": "Ircona",
-    "startDate": "Mar, 2016",
-    "endDate": "Jul, 2016",
+    "startDate": "Mar 2016",
+    "endDate": "Jul 2016",
     "experiences": [
-      "Worked on component library",
-      "Verify contents of component database"
+      "Supported development and maintenance of an internal component library.",
+      "Verified and cleaned component database records to improve data reliability for engineering workflows."
     ],
     "imageSrc": "history/ircona.png"
   }

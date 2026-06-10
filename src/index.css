@@ -1,6 +1,101 @@
 @import "tailwindcss";
 
-/* Define your design tokens here (Tailwind v4) */
+@theme {
+  --color-brand-bg: #EEF2F7;
+  --color-brand-surface: #FFFFFF;
+  --color-brand-text: #111827;
+  --color-brand-primary: #0284C7;
+  --color-brand-accent: #4F46E5;
+  --color-brand-ring: #7DD3FC;
+
+  --shadow-soft: 0 12px 32px -16px rgba(15, 23, 42, 0.20);
+
+  --font-sans: Inter, ui-sans-serif, system-ui, "Segoe UI", Roboto,
+               Helvetica, Arial, "Noto Sans", "Apple Color Emoji",
+               "Segoe UI Emoji", sans-serif;
+}
+
+:root { color-scheme: light; }
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-brand-bg text-brand-text font-sans antialiased;
+  }
+
+  [id] {
+    scroll-margin-top: 88px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 text-base font-semibold
+           bg-brand-primary text-white shadow-soft transition hover:opacity-95
+           focus:outline-none focus:ring-4 focus:ring-brand-ring;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-semibold
+           text-slate-800 shadow-soft transition hover:bg-slate-50
+           focus:outline-none focus:ring-4 focus:ring-brand-ring;
+  }
+
+  .card {
+    @apply rounded-2xl border border-slate-200/90 bg-brand-surface p-6 shadow-soft;
+  }
+
+  .panel {
+    @apply rounded-3xl border border-slate-200/90 bg-white/80 shadow-soft backdrop-blur;
+  }
+
+  .chip {
+    @apply rounded-full border border-slate-200 bg-sky-50 px-3 py-1 text-sm font-medium text-slate-700;
+  }
+
+  .section-eyebrow {
+    @apply text-sm font-semibold uppercase tracking-[0.2em] text-brand-primary;
+  }
+
+  .section-title {
+    @apply mt-2 text-3xl font-bold tracking-tight text-slate-950 md:text-4xl;
+  }
+
+  .text-muted {
+    @apply text-slate-700;
+  }
+
+  .text-subtle {
+    @apply text-slate-600;
+  }
+
+  .text-soft {
+    @apply text-slate-500;
+  }
+
+  .link-primary {
+    @apply font-medium text-brand-primary underline decoration-brand-primary/30 underline-offset-4 transition hover:text-sky-700;
+  }
+
+  .divider {
+    @apply border-slate-200;
+  }
+}
+
+
+
+
+/* @import "tailwindcss";
+
 @theme {
   --color-brand-bg: #0B132B;
   --color-brand-surface: #0F172A;
@@ -11,34 +106,40 @@
 
   --shadow-soft: 0 10px 30px -10px rgba(0,0,0,.45);
 
-  /* so `font-sans` uses Inter stack */
   --font-sans: Inter, ui-sans-serif, system-ui, "Segoe UI", Roboto,
                Helvetica, Arial, "Noto Sans", "Apple Color Emoji",
                "Segoe UI Emoji", sans-serif;
 }
 
-/* Global base */
 :root { color-scheme: dark; }
-html, body, #root { height: 100%; }
+html, body, #root { min-height: 100%; }
 
 @layer base {
   html { scroll-behavior: smooth; }
   body { @apply bg-brand-bg text-brand-text font-sans antialiased; }
-  /* sticky header anchor offset */
-  [id] { scroll-margin-top: 80px; }
+  [id] { scroll-margin-top: 88px; }
 }
 
-/* Reusable utility “recipes” */
 @layer components {
   .btn-primary {
     @apply inline-flex items-center justify-center rounded-full px-6 py-3 text-base font-semibold
            bg-brand-primary text-white shadow-soft transition hover:opacity-95
            focus:outline-none focus:ring-4 focus:ring-brand-ring;
   }
+
   .card {
-    @apply rounded-2xl border border-white/10 bg-brand-surface/80 backdrop-blur p-6 shadow-soft;
+    @apply rounded-2xl border border-white/10 bg-brand-surface/80 p-6 shadow-soft backdrop-blur;
   }
+
   .chip {
-    @apply rounded-full bg-slate-900 px-4 py-1 text-sm text-slate-200;
+    @apply rounded-full border border-white/10 bg-slate-900/80 px-3 py-1 text-sm text-slate-200;
   }
-}
+
+  .section-eyebrow {
+    @apply text-sm font-semibold uppercase tracking-[0.2em] text-brand-accent;
+  }
+
+  .section-title {
+    @apply mt-2 text-3xl font-bold tracking-tight text-white md:text-4xl;
+  }
+} */

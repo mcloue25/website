@@ -1,83 +1,104 @@
 [
   {
-    "title": "QML Fincance Trading",
+    "title": "Financial Regime Classification (Classical ML vs Quantum ML)",
+    "category": "Classical ML · QML ·  Finance",
     "imageSrc": "projects/QML-dashboard.png",
-    "description": "Comparative analysis of classical and quantum machine learning model architectures applied to financial data",
-    "skills": ["Python", "yFinance", "pandas", "numpy", "pennylane", "Sklearn", "Next.js"],
-    "demo": "https://www.ReelGeneratorDemo.com",
+    "description": "Hybrid classical–quantum ML pipeline evaluating whether quantum kernels provide useful inductive bias for financial regime detection, benchmarked against strong classical baselines.",
+    "impact": "Benchmarks quantum and classical approaches to understand whether quantum components provide practical modelling benefits under realistic financial data constraints.",
+    "badges": ["Classical vs quantum", "Financial regimes", "Strong baselines"],
+    "skills": ["Python", "PennyLane", "scikit-learn", "XGBoost", "LightGBM", "SVM", "pandas", "Next.js"],
     "imageFit": "contain",
     "source": "https://github.com/mcloue25/QML---Finance"
   },
   {
-    "title": "Tennis Swing Classification",
-    "imageSrc": "projects/forehand-annotated.gif",
-    "description": "Tennis swing classification achieving 96% accuracy using video data",
-    "skills": ["Python", "Pytorch", "CNN", "LSTM", "Pose Estimation", "pandas"],
-    "demo": "https://www.ReelGeneratorDemo.com",
+    "title": "UCD Student Helpdesk Agentic Assistant",
+    "category": "Agentic AI · RAG · LLM Systems",
+    "imageSrc": "projects/ucd_studentdesk.png",
+    "description": "Agentic AI assistant designed to support UCD student helpdesk queries by combining retrieval-augmented generation, structured tool use and workflow routing for more accurate student support.",
+    "impact": "Demonstrates practical LLM system design by combining RAG, agentic reasoning and user-facing support workflows to turn institutional knowledge into a more accessible assistant experience.",
+    "outcomes": ["Agentic workflow design", "RAG-based student support", "Tool-use architecture", "User-facing AI assistant"],
+    "skills": ["Python", "LangChain", "RAG", "LLMs", "Agentic AI", "Prompt Engineering", "Vector Search", "Next.js"],
     "imageFit": "contain",
-    "source": "https://github.com/mcloue25/applied-ai-in-vision-and-imaging/tree/main/assingment"
+    "source": ""
   },
   {
-    "title": "ClubHub",
-    "imageSrc": "projects/court-scheduler.png",
-    "description": "All-in-one team management app that handles facility scheduling, live in-game stat tracking, league standings & player analytics",
-    "skills": ["Javascript", "React", "Tailwind", "Expo", "Firebase", "axios"],
-    "demo": "https://www.ReelGeneratorDemo.com",
-    "imageFit": "contain",
-    "source": "https://github.com/mcloue25/court-scheduler"
-  },
-  {
-    "title": "TikTok Generator",
-    "imageSrc": "projects/reel-generator.gif",
-    "description": "Scrapes popular subreddits & creates short form video content thats automatically uploaded to social media platforms",
-    "skills": ["Python", "Webscraping", "Selenium"],
-    "demo": "https://www.ReelGeneratorDemo.com",
-    "imageFit": "contain",
-    "source": "https://github.com/mcloue25/reels_generator"
-  },
-  {
-    "title": "Basketball Player Tracking",
+    "title": "Basketball Player Tracking & Analytics",
+    "category": "Computer Vision · Sports Analytics",
     "imageSrc": "projects/bball_analytics_updated.png",
-    "description": "A CV model trained to track player movement to generate shooting percentages & efficiency metrics",
-    "skills": ["Python", "YOLOV12", "React", "Pose Estimation", "Action Recognition"],
-    "demo": "https://www.BballPlayerTrackingDemo.com",
+    "description": "Computer vision system that uses court landmark detection, player detection and homographic projection to map live basketball footage onto a 2D court plane for spatial tracking and performance analysis.",
+    "impact": "Shows end-to-end computer vision product thinking by converting raw game footage into structured court-position data that can support player tracking, spatial analysis and performance insights.",
+    "badges": ["Landmark detection", "Player tracking", "2D court mapping", "Homography"],
+    "skills": ["Python", "YOLO", "Computer Vision", "Pose Estimation", "Homographic Projection", "React"],
     "imageFit": "contain",
     "source": "https://github.com/mcloue25/basketball-analytics"
   },
   {
-    "title": "Clothes Style Recommender system",
-    "imageSrc": "projects/clothesDataset.png",
-    "description": "A CV model trained to recognise & classify clothes from websites that matches a user’s specific style",
-    "skills": ["Wbscraping",  "Computer Vision", "Machine Learning"],
-    "demo": "https://www.ClothesRecommenderSystemDemo.com",
+    "title": "Tennis Swing Classification",
+    "category": "Pose Estimation · Model Comparison",
+    "imageSrc": "projects/forehand-annotated.gif",
+    "description": "Tennis swing classification project comparing pose-estimation-derived features with a pure CNN-based video architecture to evaluate which approach better classifies swing types from player footage.",
+    "impact": "Compares interpretable pose-derived feature engineering against end-to-end CNN modelling to evaluate accuracy, determinism and practical suitability for sports movement classification.",
+    "badges": ["Pose features vs CNN", "Swing classification", "96% accuracy"],
+    "skills": ["Python", "PyTorch", "CNN", "LSTM", "Pose Estimation", "pandas"],
     "imageFit": "contain",
-    "source": "https://github.com/mcloue25/tvc_clothes_recommender"
+    "source": "https://github.com/mcloue25/applied-ai-in-vision-and-imaging/tree/main/assingment"
   },
   {
     "title": "Stock Analysis & Prediction",
+    "category": "Machine Learning · Financial Forecasting",
     "imageSrc": "projects/cryptoTrader.png",
-    "description": "A project a friend and I built which analyzes a stock's historical performance to predict its future price trends",
-    "skills": ["Python", "Regression", "Webscraping", "React", "Node"],
-    "demo": "https://www.StockAnalysisDemo.com",
+    "description": "Machine learning project for analysing financial market data and comparing predictive modelling approaches for stock price movement and trend estimation.",
+    "impact": "Demonstrates applied ML workflow design using financial time series data, feature engineering, model evaluation and visual analytics to explore predictive performance under noisy real-world conditions.",
+    "outcomes": ["Financial time series modelling", "Feature engineering", "Model comparison", "Visual analytics"],
+    "skills": ["Python", "pandas", "scikit-learn", "Time Series", "Financial Data", "Feature Engineering", "Data Visualisation", "Model Evaluation"],
     "imageFit": "contain",
-    "source": "https://github.com/mcloue25/stock_analysis"
+    "source": ""
   },
   {
     "title": "PocketTrainer",
+    "category": "Computer Vision · Movement Assessment",
     "imageSrc": "projects/weightsGIF.gif",
-    "description": "Final Year project to assess human movement performance built alongside accompanying performance tracker app",
+    "description": "Pose-estimation system for assessing exercise technique and movement quality, combining computer vision, signal processing and a companion mobile application.",
+    "impact": "Shows applied ML engineering across model development, biomechanical signal processing and user-facing mobile product design.",
+    "badges": ["Pose estimation", "Movement quality", "Mobile app"],
     "skills": ["Computer Vision", "Pose Estimation", "Signal Processing", "Android Studio", "Docker"],
-    "demo": "https://www.PocketTrainerDemo.com",
     "imageFit": "contain",
     "source": "https://github.com/mcloue25/PocketTrainer"
   },
   {
-    "title": "Website",
-    "imageSrc": "projects/website.png",
-    "description": "See how I built this website",
-    "skills": ["Javascript", "React", "Tailwind", "Vite", "Netlify"],
-    "demo": "https://www.PocketTrainerDemo.com",
+    "title": "ClubHub Sports Operations Platform",
+    "category": "Full-Stack Product Infrastructure",
+    "imageSrc": "projects/court-scheduler.png",
+    "description": "Full-stack sports operations platform with training scheduling, attendance tracking, live game statistics, league tables and role-based team management.",
+    "impact": "Highlights production software engineering skills around authentication, cloud APIs, scheduling workflows and analytics-ready data capture.",
+    "badges": ["AWS APIs", "Role-based workflows", "Analytics-ready data"],
+    "skills": ["JavaScript", "React", "Tailwind", "Expo", "Firebase", "AWS"],
     "imageFit": "contain",
-    "source": "https://github.com/mcloue25/website"
+    "source": "https://github.com/mcloue25/court-scheduler"
+  },
+  {
+    "title": "AI TikTok Content Generator",
+    "category": "Generative AI · Automation",
+    "imageSrc": "projects/reel-generator.gif",
+    "description": "Generative AI workflow for creating short-form video content by combining prompt-driven text generation, media processing and automated content assembly.",
+    "impact": "Shows practical use of generative AI beyond chat interfaces by connecting language generation, media automation and user-facing content workflows.",
+    "outcomes": [
+      "Generative AI workflow",
+      "Prompt-driven generation",
+      "Media automation",
+      "Short-form content assembly"
+    ],
+    "skills": [
+      "Python",
+      "Generative AI",
+      "Prompt Engineering",
+      "Automation",
+      "Media Processing",
+      "APIs",
+      "React",
+      "JavaScript"
+    ],
+    "imageFit": "cover",
+    "source": ""
   }
 ]

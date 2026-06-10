@@ -1,56 +1,46 @@
 import React from "react";
-import skills from "../data/skills.json";
 import history from "../data/history.json";
 import { getImageUrl } from "../utils";
 
 export const Experience = () => {
   return (
     <section id="experience" className="mx-auto mt-24 max-w-6xl px-6">
-      <h2 className="text-3xl font-bold tracking-wide uppercase">Experience</h2>
+      <div className="max-w-3xl">
+        <p className="section-eyebrow">Experience</p>
+        <h2 className="section-title">Professional experience developing computer vision systems, analytics platforms and software tools that make complex model outputs useful in practice.</h2>
+      </div>
 
-      <div className="mt-6 flex flex-col items-center gap-10 md:flex-row md:items-start md:justify-between">
-        {/* Skills */}
-        <div className="grid w-full grid-cols-2 gap-6 sm:grid-cols-3 md:w-2/5">
-          {skills.map((skill, id) => (
-            <div key={id} className="flex flex-col items-center gap-2">
-              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-brand-accent/20">
-                <img
-                  src={getImageUrl(skill.imageSrc)}
-                  alt={skill.title}
-                  className="h-16 w-16 object-contain"
-                />
-              </div>
-              <p className="text-base font-medium">{skill.title}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* History */}
-        <ul className="flex w-full flex-col gap-6 md:w-3/5">
-          {history.map((historyItem, id) => (
-            <li key={id} className="card flex items-start gap-4">
+      <ol className="relative mt-8 space-y-6 before:absolute before:left-6 before:top-4 before:hidden before:h-[calc(100%-2rem)] before:w-px before:bg-slate-200 md:before:block">
+        {history.map((historyItem) => (
+          <li key={`${historyItem.role}-${historyItem.organisation}`} className="card relative flex items-start gap-5 md:ml-14">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-white p-2 md:absolute md:-left-20">
               <img
                 src={getImageUrl(historyItem.imageSrc)}
-                alt={`${historyItem.organisation} Logo`}
-                className="h-12 w-12 object-contain opacity-90"
+                alt={`${historyItem.organisation} logo`}
+                className="max-h-full max-w-full object-contain"
               />
-              <div>
-                <h3 className="text-xl font-semibold">
-                  {`${historyItem.role}, ${historyItem.organisation}`}
-                </h3>
-                <p className="text-sm text-slate-400">
-                  {`${historyItem.startDate} - ${historyItem.endDate}`}
+            </div>
+
+            <div>
+              <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
+                <div>
+                  <h3 className="text-xl font-semibold text-slate-950">{historyItem.role}</h3>
+                  <p className="text-base text-muted">{historyItem.organisation}</p>
+                </div>
+                <p className="rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-sm text-slate-700">
+                  {historyItem.startDate} – {historyItem.endDate}
                 </p>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-base">
-                  {historyItem.experiences.map((experience, idx) => (
-                    <li key={idx}>{experience}</li>
-                  ))}
-                </ul>
               </div>
-            </li>
-          ))}
-        </ul>
-      </div>
+
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-base leading-7 text-muted">
+                {historyItem.experiences.map((experience) => (
+                  <li key={experience}>{experience}</li>
+                ))}
+              </ul>
+            </div>
+          </li>
+        ))}
+      </ol>
     </section>
   );
 };

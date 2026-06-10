@@ -1,56 +1,73 @@
-// ProjectCard.jsx
 import React from "react";
 import { getImageUrl } from "../utils";
 
 export const ProjectCard = ({
-  project: { title, imageSrc, imageFit, description, skills, demo, source, impact },
+  project: { title, imageSrc, imageFit, description, skills, source, impact, category, badges },
 }) => {
   const [fit, setFit] = React.useState(imageFit || "cover");
 
-  const handleLoad = (e) => {
-    // Only auto-detect if you haven't forced a mode via project.imageFit
+  const handleLoad = (event) => {
     if (imageFit) return;
-    const img = e.currentTarget;
-    const isPortrait = img.naturalHeight > img.naturalWidth;
-    setFit(isPortrait ? "contain" : "cover");
+    const img = event.currentTarget;
+    setFit(img.naturalHeight > img.naturalWidth ? "contain" : "cover");
   };
 
   return (
-    <article className="card flex h-[480px] flex-col rounded-2xl border border-white/10 bg-white/5 p-4 shadow-sm transition hover:bg-white/10">
-      {/* fixed landscape-shaped box; portrait images will letterbox left/right */}
-      <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-slate-800/30">
+    <article className="card flex h-full flex-col overflow-hidden p-4 transition hover:-translate-y-1 hover:shadow-lg">
+      <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl bg-slate-100 ring-1 ring-slate-200">
         <img
           src={getImageUrl(imageSrc)}
-          alt={`Image of ${title}`}
+          alt={`Screenshot or visual preview for ${title}`}
           onLoad={handleLoad}
           loading="lazy"
           decoding="async"
-          className={`absolute inset-0 h-full w-full object-center ${
-            fit === "contain" ? "object-contain" : "object-cover"
-          }`}
+          className={`absolute inset-0 h-full w-full object-center ${fit === "contain" ? "object-contain" : "object-cover"}`}
         />
       </div>
 
-      <div className="mt-4 flex-1">
-        <h3 className="text-xl font-semibold text-center line-clamp-2">{title}</h3>
-        <p className="mt-2 text-sm text-slate-300 line-clamp-3 text-center">{description}</p>
-        {impact && <p className="mt-2 text-xs text-slate-400 line-clamp-2">Outcome: {impact}</p>}
+      <div className="flex flex-1 flex-col p-2 pt-5">
+        {category && <p className="text-sm font-semibold uppercase tracking-wide text-brand-primary">{category}</p>}
+        <h3 className="mt-1 text-2xl font-semibold text-slate-950">{title}</h3>
+        <p className="mt-3 text-base leading-7 text-muted">{description}</p>
 
-        <ul className="mt-3 flex max-h-16 flex-wrap gap-2 overflow-hidden ">
-          {skills.map((skill, id) => (
-            <li key={id} className="chip">{skill}</li>
-          ))}
-        </ul>
-      </div>
+        {badges?.length > 0 && (
+          <ul className="mt-4 flex flex-wrap gap-2" aria-label={`Key outcomes for ${title}`}>
+            {badges.map((badge) => (
+              <li key={badge} className="rounded-full border border-brand-primary/20 bg-sky-50 px-3 py-1 text-sm font-semibold text-brand-primary">
+                {badge}
+              </li>
+            ))}
+          </ul>
+        )}
 
-      <div className="mt-4 flex gap-3 pt-4">
+        {impact && (
+          <p className="mt-4 rounded-2xl border border-brand-primary/20 bg-sky-50 px-4 py-3 text-sm leading-6 text-slate-700">
+            <span className="font-semibold text-brand-primary">Impact: </span>
+            {impact}
+          </p>
+        )}
+
+        {skills?.length > 0 && (
+          <ul className="mt-5 flex flex-wrap gap-2">
+            {skills.map((skill) => (
+              <li key={skill} className="chip">
+                {skill}
+              </li>
+            ))}
+          </ul>
+        )}
+
         {source && (
-          <a
-            href={source}
-            className="inline-flex items-center rounded-full border border-white/10 px-5 py-2 text-sm font-semibold transition hover:bg-white/5"
-          >
-            Github Repo
-          </a>
+          <div className="mt-auto pt-6">
+            <a
+              href={source}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary px-5 py-2 text-sm"
+            >
+              View repository
+            </a>
+          </div>
         )}
       </div>
     </article>
