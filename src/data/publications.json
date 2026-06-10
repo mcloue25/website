@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Towards Efficient and Explainable HYDRA for Time Series Classification",
+    "authors": "Eoin McLoughlin, Philip Lynch",
+    "venue": "Manuscript under review",
+    "status": "Under Review",
+    "year": "2026",
+    "description": "This work investigates the reproducibility, efficiency, and interpretability of HYDRA, a state-of-the-art time series classification method. The paper reproduces HYDRA across the UCR benchmark archive, compares it against strong classical baselines, and extends the original approach with practical engineering improvements and post-hoc saliency analysis to better understand model behaviour across different types of time series data.",
+    "highlights": [
+      "Reproduced and evaluated HYDRA across UCR time series classification datasets against strong classical baselines including MrSQM and logistic regression.",
+      "Improved experimental scalability through hardware compatibility fixes, dynamic batching, and memory-aware per-dataset execution.",
+      "Developed a saliency-based interpretation pipeline that maps classifier evidence back onto time-domain regions of the input signal.",
+      "Analysed how explanation behaviour varies across different signal morphology clusters, supporting more transparent model evaluation."
+    ],
+    "skills": [
+      "Python",
+      "Time Series Classification",
+      "HYDRA",
+      "UCR Benchmarking",
+      "Reproducibility",
+      "Model Explainability",
+      "Saliency Analysis",
+      "Experimental Evaluation"
+    ],
+    "paper": "",
+    "code": ""
+  }
+]

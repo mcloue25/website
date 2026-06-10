@@ -70,7 +70,7 @@ export const Education = () => {
 
         {/* Masters (in progress) */}
         <div className="card">
-          <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
+          <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
             <div>
               <DegreeTitle title={ms?.degree || "M.Sc. in …"} href={ms?.link} />
               <p className="text-slate-300">{ms?.institution || "Your University"}</p>
@@ -78,9 +78,36 @@ export const Education = () => {
                 {ms?.start || "YYYY"} – {ms?.end || "Present"}
               </p>
             </div>
-            <span className="self-start rounded-full bg-brand-primary/20 px-3 py-1 text-sm font-semibold text-brand-accent">
-              In Progress
-            </span>
+
+            <div className="flex flex-col items-start gap-2 md:items-end">
+              {ms?.result && (
+                <span className="rounded-full border border-white/20 bg-white/10 px-2 py-0.5 text-sm font-medium text-slate-100">
+                  {ms.result}
+                </span>
+              )}
+
+              <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm">
+                <p className="font-semibold text-brand-accent md:text-right">
+                  Current GPA
+                </p>
+
+                <div className="mt-2 space-y-1 text-slate-300">
+                  <div className="flex justify-between gap-6">
+                    <span>Semester 1</span>
+                    <span className="font-medium text-slate-100">{ms?.gpa}</span>
+                  </div>
+
+                  <div className="flex justify-between gap-6">
+                    <span>Semester 2</span>
+                    <span className="font-medium text-slate-100">4.15</span>
+                  </div>
+                </div>
+
+                <p className="mt-2 text-xs text-slate-400 md:text-right">
+                  Final award classification pending
+                </p>
+              </div>
+            </div>
           </div>
 
           {ms?.notes && (

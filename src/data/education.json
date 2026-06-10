@@ -6,7 +6,7 @@
     "start": "2016",
     "end": "2020",
     "result": "First Class Honours (1.1)",
-    "gpa" : "4.5",
+    "gpa" : "3.75",
     "notes": "Final-year project: computer vision & pose estimation (details below)."
   },
   "masters": {
@@ -14,7 +14,9 @@
     "link": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSE&MAJR=T413&KEYWORD=advancedai",
     "institution": "UCD | University College Dublin",
     "start": "2025",
-    "end": "Present",
-    "notes": "Currently attending; focus on advanced ML & model optimisation."
+    "end": "2026",
+    "result": "First Class Honours (1.1) | Current",
+    "gpa" : "3.63",
+    "notes": "Focused on advanced machine learning, model optimisation, time series analysis and applied AI systems."
   }
 }

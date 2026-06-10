@@ -9,7 +9,7 @@
     "source": "https://github.com/mcloue25/QML---Finance"
   },
   {
-    "title": "Tennis Swing Classificant",
+    "title": "Tennis Swing Classification",
     "imageSrc": "projects/forehand-annotated.gif",
     "description": "Tennis swing classification achieving 96% accuracy using video data",
     "skills": ["Python", "Pytorch", "CNN", "LSTM", "Pose Estimation", "pandas"],
